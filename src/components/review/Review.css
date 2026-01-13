@@ -128,7 +128,7 @@
     }
 
     .review .review-title {
-        background: url(./titles/review-mobile.png);
+        background: url(../titles/review-mobile.png);
         width: 350px;
         height: 66px;
     }

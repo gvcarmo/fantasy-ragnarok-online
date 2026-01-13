@@ -112,7 +112,7 @@
 }
 
 .cadastro .cadastro-forms .submit {
-  background: url('./titles/cadastrar.png');
+  background: url('../titles/cadastrar.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,7 +141,7 @@
 
 @media (max-width: 767px) {
   .cadastro .cadastro-forms .submit {
-    background: url('./titles/cadastrar-mobile.png');
+    background: url('../titles/cadastrar-mobile.png');
   }
 
   .cadastro {

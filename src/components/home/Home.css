@@ -1,0 +1,52 @@
+.home {
+  background: url(../public/home-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 768px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 5.0s ease;
+}
+
+.home.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home img {
+  width: 377px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 1s ease;
+
+  transition-delay: 2.5s;
+}
+
+.home.visible img {
+  opacity: 1;
+  transform: scale(1);
+  animation: glow 1s ease-in-out infinite alternate;
+  animation-delay: 3.5s;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
+  }
+  to {
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 1));
+  }
+}
+
+@media (min-width: 1590px) {
+  .home {
+      background-size: contain;
+  }
+}

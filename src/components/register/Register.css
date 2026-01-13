@@ -1,0 +1,192 @@
+.cadastro {
+  width: 1140px;
+  display: flex;
+  gap: 40px;
+  color: #373737;
+}
+
+.cadastro .cadastro-rules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  width: 510px;
+}
+
+.cadastro .cadastro-rules .cadastro-title {
+  width: 510px;
+  height: 74px;
+  margin-bottom: 18px;
+}
+
+.cadastro .cadastro-rules .rules {
+  padding: 12px;
+  font-size: 20px;
+  width: 510px;
+  color: #373737;
+  margin-top: 18px;
+  border: 1px solid #A4A4A4;
+  border-radius: 7px;
+}
+
+.cadastro .cadastro-forms {
+  width: 569px;
+  height: 679px;
+  padding: 18px;
+  border: 1px solid #A4A4A4;
+  border-radius: 7px;
+}
+
+.cadastro .cadastro-forms .input {
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 7px;
+  border: 1px solid #A4A4A4;
+}
+
+.cadastro .cadastro-forms .name {
+  width: 533px;
+}
+
+.cadastro .cadastro-forms .birthday-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.cadastro .cadastro-forms .day,
+.cadastro .cadastro-forms .month {
+  width: 150px;
+  margin-right: 18px;
+}
+
+.cadastro .cadastro-forms .year {
+  width: 195px;
+}
+
+.cadastro .cadastro-forms .genero-form {
+  margin-top: 18px;
+}
+
+.cadastro .cadastro-forms .genero-form .genero-for {
+  display: flex;
+  gap: 18px;
+}
+
+.cadastro .cadastro-forms .genero-form .input-radio {
+  width: 160px;
+  height: 56px;
+  border: 1px solid #A4A4A4;
+  border-radius: 7px;
+  color: #818181;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 18px;
+}
+
+.cadastro .cadastro-forms .genero-form .input-radio-last {
+  width: 175px;
+  height: 56px;
+  border: 1px solid #A4A4A4;
+  border-radius: 7px;
+  color: #818181;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 18px;
+}
+
+.cadastro .cadastro-forms .email {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  ;
+  width: 533px;
+}
+
+.cadastro .cadastro-forms .senha {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  ;
+  width: 533px;
+}
+
+.cadastro .cadastro-forms .submit {
+  background: url('../public/titles/cadastrar.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 56px;
+  width: 533px;
+  border: none;
+  cursor: pointer;
+  color: #818181;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.cadastro .cadastro-forms .submit:hover {
+  scale: 0.97;
+  transition: all 0.3s ease-in-out;
+  color: #303030;
+}
+
+@media (max-width: 1140px) {
+  .cadastro {
+    width: 768px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .cadastro .cadastro-forms .submit {
+    background: url('../public/titles/cadastrar-mobile.png');
+  }
+
+  .cadastro {
+    width: 365px;
+  }
+
+  .cadastro .cadastro-rules .cadastro-title {
+    width: 370px;
+    height: 100%;
+  }
+
+  .cadastro .cadastro-rules .rules {
+    width: 365px;
+  }
+
+  .cadastro .cadastro-forms {
+    width: 365px;
+    height: 1000px;
+  }
+
+  .cadastro .cadastro-rules,
+  .cadastro .cadastro-forms .input,
+  .cadastro .cadastro-forms .name,
+  .cadastro .cadastro-forms .email,
+  .cadastro .cadastro-forms .senha {
+    width: 328px;
+  }
+
+  .cadastro .cadastro-forms .day,
+  .cadastro .cadastro-forms .month,
+  .cadastro .cadastro-forms .year {
+    width: 328px;
+    margin-bottom: 18px;
+  }
+
+  .cadastro .cadastro-forms .genero-form .genero-for {
+    flex-direction: column;
+  }
+
+  .cadastro .cadastro-forms .genero-form .input-radio,
+  .cadastro .cadastro-forms .genero-form .input-radio-last {
+    width: 328px;
+  }
+
+  .cadastro .cadastro-forms .submit {
+    width: 328px;
+  }
+}

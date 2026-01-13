@@ -1,0 +1,98 @@
+.foot {
+  background: url(../foot/foot-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 768px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 74px;
+  font-size: 18px;
+}
+
+.foot .menu-foot {
+  display: flex;
+  align-items: center;
+  margin-top: 300px;
+  gap: 271px;
+}
+
+.foot .menu-foot .links {
+  display: flex;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.foot .menu-foot .links a {
+  color: #424242;
+  text-decoration: none;
+}
+
+.foot .menu-foot .links a:hover,
+.foot .menu-foot .social-links a:hover {
+  filter: brightness(0.1);
+  transition: all 0.3s ease-in-out;
+  scale: 1.05;
+}
+
+.foot .menu-foot .links p {
+  color: #969696;
+  font-weight: 400;
+}
+
+.foot .menu-foot .links .links-foot {
+  display: flex;
+  gap: 12px;
+}
+
+.foot .menu-foot .social-links {
+  display: flex;
+  gap: 18px;
+}
+
+.foot .menu-foot .social-links a {
+  text-decoration: none;
+  color: #424242;
+}
+
+.foot .menu-foot .social-links .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot .copy {
+  text-align: center;
+}
+
+@media(max-width: 1275px) {
+  .foot .menu-foot {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .foot .menu-foot {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .foot .menu-foot .links {
+    flex-direction: column;
+  }
+  
+  .foot .menu-foot .links .bars {
+    display: none;
+  }
+
+  .foot .copy {
+    width: 375px;
+  }
+}

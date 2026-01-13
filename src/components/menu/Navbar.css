@@ -1,0 +1,119 @@
+header {
+    background: url(/public/menu-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90px;
+    box-shadow: 0px 2px 4px rgba(000, 000, 000, .2);
+    border-bottom: 1px solid #A4A4A4 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 31px;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    z-index: 99;
+}
+
+header .nav-links {
+    display: flex;
+    gap: 31px;
+}
+
+header .nav-links .menu .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #424242;
+    font-weight: 600;
+    font-size: 24px;
+    width: inherit;
+    position: relative;
+}
+
+header .nav-links .menu .link:hover {
+    filter: brightness(0.1);
+    transition: all 0.3s ease-in-out;
+    scale: 1.05;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 10;
+    position: absolute;
+    right: 5%;
+}
+
+.menu-icon:hover {
+    filter: brightness(0.1);
+    transition: all 0.3s ease-in-out;
+    scale: 1.05;
+}
+
+.bar {
+    width: 30px;
+    height: 5px;
+    background-color: #424242;
+    transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+@media (max-width: 1265px) {
+    header .menu-icon {
+        display: flex;
+    }
+
+    header .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 100%;
+        background: url(../../public/menu-wall.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    header .nav-links.active {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    header .nav-links .menu .link {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.4s ease;
+    }
+
+    header .nav-links.active .link {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.2s;
+    }
+
+    header .menu-icon.open .bar:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 6px);
+    }
+
+    header .menu-icon.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    header .menu-icon.open .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -6px);
+    }
+}

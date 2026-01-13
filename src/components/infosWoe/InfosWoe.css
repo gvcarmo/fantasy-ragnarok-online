@@ -1,0 +1,107 @@
+.infos-woe {
+  background: url(../public/war-of-emperium-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 768px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infos-woe .ranks {
+  width: 1140px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+}
+
+.infos-woe .ranks .woe-rank {
+  width: 546px;
+  display: flex;
+  flex-direction: column;
+}
+
+.infos-woe .ranks .woe-rank .woe-title {
+  width: 546px;
+  height: 146px;
+  margin-bottom: 18px;
+}
+
+
+.infos-woe .ranks .woe-rank .flags {
+  width: 546px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 85px;
+  row-gap: 36px;
+}
+
+.infos-woe .ranks .pvp-rank {
+  width: 456px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1140px) {
+  .infos-woe {
+    height: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .infos-woe .ranks {
+    width: 768px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 568px) {
+  .infos-woe .ranks {
+    width: 375px;
+    gap: 80px;
+  }
+
+  .infos-woe .ranks .woe-rank {
+    width: 375px;
+    align-items: center;
+  }
+
+  .infos-woe .ranks .woe-rank .woe-title {
+    width: 375px;
+    height: 100%;
+  }
+
+  .infos-woe .ranks .woe-rank .flags {
+    width: 355px;
+  }
+}
+
+@media (max-width: 462px) {
+
+  .infos-woe .ranks .woe-rank {
+    margin-left: 7px;
+  }
+
+  .infos-woe .ranks .pvp-rank {
+    width: 365px;
+  }
+
+  .infos-woe .ranks .pvp-rank .pvp-title {
+    width: 365px;
+    height: 100%;
+  }
+
+  .infos-woe .ranks .pvp-rank .pvp-infos {
+    width: 355px;
+    height: 100%;
+  }
+}

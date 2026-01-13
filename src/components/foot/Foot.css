@@ -67,6 +67,7 @@
 
 .foot .copy {
   text-align: center;
+  color: #424242;
 }
 
 @media(max-width: 1275px) {

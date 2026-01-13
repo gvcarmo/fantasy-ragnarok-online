@@ -45,7 +45,7 @@ export const News = () => {
             opacity: 1,
             y: 0,
             transition: {
-                delay: 0.2 + i * 0.2,
+                delay: 0.2 + i * 0.4,
                 type: "spring",
                 stiffness: 50,
                 damping: 15

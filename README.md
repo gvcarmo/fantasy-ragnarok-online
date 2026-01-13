@@ -11,7 +11,7 @@ CSS
 ### Clone o repositório:
 ```
 Bash
-[git clone](https://github.com/gvcarmo/heros-journey.git)
+[git clone](https://github.com/gvcarmo/fantasy-ragnarok-online.git)
 ```
 
 ### Instale as dependências:

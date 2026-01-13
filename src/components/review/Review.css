@@ -12,7 +12,7 @@
     width: 1134px;
     height: 74px;
     margin-bottom: 38px;
-    background: url(../titles/review.png);
+    background: url(./titles/review.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,7 +113,7 @@
     }
 
     .review .review-title {
-        background: url(../titles/review-tablet.png);
+        background: url(./titles/review-tablet.png);
         width: 745px;
     }
 
@@ -128,7 +128,7 @@
     }
 
     .review .review-title {
-        background: url(../titles/review-mobile.png);
+        background: url(./titles/review-mobile.png);
         width: 350px;
         height: 66px;
     }

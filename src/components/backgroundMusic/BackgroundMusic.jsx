@@ -27,7 +27,7 @@ export const BackgroundMusic = () => {
 
   return (
     <div style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 1000 }}>
-      <audio ref={audioRef} src="./background-music/BackgroundMusic.mp3" loop />
+      <audio ref={audioRef} src="./background-music/BackgroundMusic.ogg" loop />
       <button 
         onClick={togglePlay}
         style={{

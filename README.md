@@ -5,6 +5,9 @@ FantasyRO é um SPA web moderno e responsiva, construído com o propósito de le
 - React.JS
 - CSS
 
+## Abra o projeto direto pelo Github Pages:
+[Clique Aqui](https://gvcarmo.github.io/fantasy-ragnarok-online/)
+
 ## 📦 Como rodar o projeto
 
 ### Clone o repositório:
@@ -14,13 +17,12 @@ Bash
 ```
 
 ### Instale as dependências:
-
 ```
 Bash
 npm install
-Inicie o servidor de desenvolvimento:
 ```
 
+### Inicie o servidor de desenvolvimento:
 ```
 Bash
 npm run dev
